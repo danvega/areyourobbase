@@ -7,17 +7,22 @@
   >
     <div class="choice">
       <div class="question">{{ choice.question }}</div>
-      <a v-for="link in choice.links" :key="link" :href="link.href">{{ link.label }}</a>
+      <a
+        v-for="link in choice.links"
+        :key="link"
+        :href="link.href"
+        :style="{color: choice.background }"
+      >{{ link.label }}</a>
     </div>
   </section>
-  <iframe
+  <!-- <iframe
     width="0"
     height="0"
-    src="https://www.youtube.com/embed/phOW-CZJWT0?autoplay=1"
+    src="https://www.youtube.com/embed/phOW-CZJWT0?autoplay=0"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-  ></iframe>
+  ></iframe>-->
 </template>
 
 <script>
@@ -33,7 +38,7 @@ export default {
             { href: "#2", label: "Yes" },
             { href: "#6", label: "No" }
           ],
-          background: "red"
+          background: "#FF5F45"
         },
         {
           id: 2,
@@ -42,7 +47,7 @@ export default {
             { href: "#3", label: "Yes" },
             { href: "#6", label: "No" }
           ],
-          background: "blue"
+          background: "#0698ED"
         },
         {
           id: 3,
@@ -51,7 +56,7 @@ export default {
             { href: "#6", label: "Yes" },
             { href: "#4", label: "No" }
           ],
-          background: "purple"
+          background: "#FC6C7C"
         },
         {
           id: 4,
@@ -60,7 +65,7 @@ export default {
             { href: "#5", label: "Yes" },
             { href: "#6", label: "No" }
           ],
-          background: "black"
+          background: "#FEC501"
         },
         {
           id: 5,
@@ -79,10 +84,12 @@ export default {
   }
 };
 </script>
-
 <style>
-@import "https://fonts.googleapis.com/css?family=Indie+Flower&display=swap";
+@import "https://fonts.googleapis.com/css?family=Indie+Flower,Public+Sans&display=swap";
 
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -91,27 +98,34 @@ body {
   padding: 0;
 }
 section {
-  width: 100vw;
   height: 100vh;
-  font-family: "Indie Flower", cursive;
+  width: 100%;
   display: flex;
 }
 .choice {
   width: 50%;
-  height: 20%;
   margin: auto;
   border: 3px solid white;
   text-align: center;
+  padding: 40px;
 }
 .question {
   font-size: 50px;
   color: #fff;
-  padding: 40px;
+  font-family: "Indie Flower", cursive;
+  margin-bottom: 20px;
 }
 .choice a {
   color: #fff;
   font-size: 30px;
   padding-right: 20px;
+  font-family: "Public Sans", sans-serif;
+  background-color: #fff;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 iframe {
   display: none;
