@@ -953,6 +953,34 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
+"@vue/compiler-core@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.0.0-alpha.2.tgz#c37e7b3df56e8c37c7a4085f24a0c4f76e93119e"
+  dependencies:
+    acorn "^7.1.0"
+    estree-walker "^0.8.1"
+    source-map "^0.6.1"
+
+"@vue/compiler-dom@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.0.0-alpha.2.tgz#76b0b77026e05831c8ca6aab9f90807843f45013"
+  dependencies:
+    "@vue/compiler-core" "3.0.0-alpha.2"
+
+"@vue/compiler-sfc@^3.0.0-alpha.1":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.0.0-alpha.2.tgz#b8d7485c2075a107508a1554b75cc5058460ba0b"
+  dependencies:
+    "@vue/compiler-core" "3.0.0-alpha.2"
+    "@vue/compiler-dom" "3.0.0-alpha.2"
+    consolidate "^0.15.1"
+    hash-sum "^2.0.0"
+    lru-cache "^5.1.1"
+    merge-source-map "^1.1.0"
+    postcss "^7.0.21"
+    postcss-selector-parser "^6.0.2"
+    source-map "^0.6.1"
+
 "@vue/component-compiler-utils@^3.0.2", "@vue/component-compiler-utils@^3.1.0":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.1.1.tgz#d4ef8f80292674044ad6211e336a302e4d2a6575"
@@ -970,6 +998,23 @@
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.1.tgz#18723530d304f443021da2292d6ec9502826104a"
+
+"@vue/reactivity@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.0.0-alpha.2.tgz#8d0b235652f1834236325c36ea0ba419e06df423"
+
+"@vue/runtime-core@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.0.0-alpha.2.tgz#574af742f13cfc691eab9247d3d23e8db59f1f83"
+  dependencies:
+    "@vue/reactivity" "3.0.0-alpha.2"
+
+"@vue/runtime-dom@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.0.0-alpha.2.tgz#16d0cf1ce4ff806d7e1ef8c16aaf869093c8ebbd"
+  dependencies:
+    "@vue/runtime-core" "3.0.0-alpha.2"
+    csstype "^2.6.8"
 
 "@vue/web-component-wrapper@^1.2.0":
   version "1.2.0"
@@ -1129,6 +1174,10 @@ acorn-walk@^6.1.1:
 acorn@^6.0.2, acorn@^6.0.7, acorn@^6.1.1, acorn@^6.2.1:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
+
+acorn@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
 
 address@^1.1.2:
   version "1.1.2"
@@ -2283,6 +2332,10 @@ csso@^4.0.2:
   dependencies:
     css-tree "1.0.0-alpha.37"
 
+csstype@^2.6.8:
+  version "2.6.8"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
+
 current-script-polyfill@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/current-script-polyfill/-/current-script-polyfill-1.0.0.tgz#f31cf7e4f3e218b0726e738ca92a02d3488ef615"
@@ -2766,6 +2819,10 @@ esrecurse@^4.1.0:
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
+
+estree-walker@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.8.1.tgz#6230ce2ec9a5cb03888afcaf295f97d90aa52b79"
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -3362,6 +3419,10 @@ hash-base@^3.0.0:
 hash-sum@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-1.0.2.tgz#33b40777754c6432573c120cc3808bbd10d47f04"
+
+hash-sum@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
 
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.7"
@@ -5327,7 +5388,7 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.0.2.tgz#482282c09a42706d1fc9a069b73f44ec08391dc9"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.23, postcss@^7.0.26, postcss@^7.0.5, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.21, postcss@^7.0.23, postcss@^7.0.26, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.26"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
   dependencies:
@@ -6702,6 +6763,12 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
 
+vue-cli-plugin-vue-next@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-vue-next/-/vue-cli-plugin-vue-next-0.0.3.tgz#06c04118e291a83c7131875d58e746d04408b1f3"
+  dependencies:
+    vue-loader "^16.0.0-alpha.1"
+
 vue-eslint-parser@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
@@ -6727,6 +6794,16 @@ vue-loader@^15.7.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-loader@^16.0.0-alpha.1:
+  version "16.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.0.0-alpha.2.tgz#461c4c1638115416233195f56ef4bc9ea96e2ad6"
+  dependencies:
+    chalk "^3.0.0"
+    hash-sum "^2.0.0"
+    loader-utils "^1.2.3"
+    merge-source-map "^1.1.0"
+    source-map "^0.6.1"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -6745,9 +6822,12 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
 
-vue@^2.6.10:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
+vue@^3.0.0-alpha.1:
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.0-alpha.2.tgz#98e1769e264110404e7131a4258f23ba554a885b"
+  dependencies:
+    "@vue/compiler-dom" "3.0.0-alpha.2"
+    "@vue/runtime-dom" "3.0.0-alpha.2"
 
 watchpack@^1.6.0:
   version "1.6.0"
