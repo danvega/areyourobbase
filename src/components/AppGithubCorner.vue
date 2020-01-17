@@ -3,6 +3,7 @@
     href="https://github.com/danvega/robbase-dev"
     class="github-corner"
     aria-label="View source on GitHub"
+    target="_blank"
   >
     <svg
       width="80"
